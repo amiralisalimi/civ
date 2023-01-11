@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="326.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="27.0" prefHeight="387.0" prefWidth="326.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Improvements">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="improvements" layoutX="11.0" layoutY="14.0" prefHeight="354.0" prefWidth="307.0">
+                           <children>
+                              <Label prefHeight="24.0" prefWidth="307.0" text="Label">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children></VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Resources">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                      <VBox fx:id="resources" layoutX="11.0" layoutY="14.0" prefHeight="354.0" prefWidth="307.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Unit Types">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                      <VBox fx:id="unitTypes" layoutX="11.0" layoutY="14.0" prefHeight="354.0" prefWidth="307.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Building Types">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <VBox fx:id="buildingTypes" layoutX="11.0" layoutY="14.0" prefHeight="354.0" prefWidth="307.0" />
+                      </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Unit Actions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="unitActions" layoutX="11.0" layoutY="14.0" prefHeight="354.0" prefWidth="307.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Technologies">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="technologies" layoutX="11.0" layoutY="14.0" prefHeight="354.0" prefWidth="307.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Research Technology">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <MenuButton fx:id="technologyMenuButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Technology" />
+                        <Button fx:id="researchButton" layoutX="124.0" layoutY="331.0" mnemonicParsing="false" onAction="#researchTech" text="Research" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="274.0" layoutY="2.0" mnemonicParsing="false" onAction="#close" text="close" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+.root {
+    -fx-background-image: url(../png/ARX/Background_A.png);
+    -fx-background-size: 1024 576;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+#launcher-root {
+    -fx-background-image: url(../png/Backgrounds/18.png)
+}
+
+#infoTopPanel {
+    -fx-background-color: black;
+}
+
+#gameButton {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.gameButton {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.nextTurnButton {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.notificationButton {
+    -fx-font-weight: bold;
+}
+
+#gameText {
+    -fx-control-inner-background: blue;
+}
+
+.gameText {
+    -fx-control-inner-background: blue;
+    -fx-text-inner-color: white;
+}
+
+.backgroundColorB {
+    -fx-background-color: black;
+}
+
+.backgroundColorBR {
+    -fx-background-color: rgb(113, 112, 116);
+}
+
+.table-column{
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.table-row-cell {
+    -fx-cell-size: 40px;
+}

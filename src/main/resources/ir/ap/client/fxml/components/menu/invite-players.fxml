@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="500.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="10.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ap.client.components.menu.InvitePlayersView">
+   <children>
+      <Label text="Send invitation to:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="invitePlayer" prefHeight="33.0" prefWidth="460.0" promptText="Enter username" />
+      <Button mnemonicParsing="false" onAction="#invite" prefHeight="40.0" prefWidth="460.0" text="Send invitation" />
+      <HBox>
+         <children>
+            <HBox prefHeight="24.0" prefWidth="652.0">
+               <children>
+                  <Label fx:id="messageLabel">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="476.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#removeSelectedPlayers" text="Remove Selected" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <TableView fx:id="invitedPlayersTable" maxHeight="300.0" prefWidth="460.0">
+        <columns>
+          <TableColumn prefWidth="120.0" text="Avatars" />
+          <TableColumn prefWidth="200.0" text="Players invited" />
+          <TableColumn prefWidth="120.0" text="Accept" />
+        </columns>
+      </TableView>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="160.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ap.client.components.map.CurrentResearchView">
+   <children>
+      <ImageView fx:id="researchImageView" fitHeight="124.0" fitWidth="160.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="researchName" alignment="CENTER" editable="false" prefHeight="26.0" prefWidth="160.0" stylesheets="@../css/styles.css" text="ResearchName(0)" />
+   </children>
+</AnchorPane>

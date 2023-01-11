@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="226.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ap.client.components.map.panel.UnitActionsView">
+   <children>
+      <Button fx:id="move" layoutY="2.0" mnemonicParsing="false" onAction="#move" prefHeight="24.0" prefWidth="70.0" text="Move">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="sleep" layoutY="31.0" mnemonicParsing="false" onAction="#sleep" prefHeight="24.0" prefWidth="70.0" text="Sleep" />
+      <Button fx:id="alert" layoutY="60.0" mnemonicParsing="false" onAction="#alert" prefHeight="24.0" prefWidth="70.0" text="Alert" />
+      <Button fx:id="wake" layoutY="89.0" mnemonicParsing="false" onAction="#wake" prefHeight="24.0" prefWidth="70.0" text="Wake" />
+      <Button fx:id="delete" layoutX="1.0" layoutY="118.0" mnemonicParsing="false" onAction="#delete" prefHeight="24.0" prefWidth="70.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="foundCity" layoutX="79.0" layoutY="2.0" mnemonicParsing="false" onAction="#foundCity" prefHeight="24.0" prefWidth="113.0" text="Found City" />
+      <Button fx:id="cancel" layoutX="1.0" layoutY="146.0" mnemonicParsing="false" onAction="#cancel" prefHeight="24.0" prefWidth="70.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="buildRoad" layoutX="79.0" layoutY="2.0" mnemonicParsing="false" onAction="#buildRoad" prefHeight="24.0" prefWidth="113.0" text="Build Road" />
+      <Button fx:id="clearLand" layoutX="79.0" layoutY="31.0" mnemonicParsing="false" onAction="#clearLand" prefHeight="24.0" prefWidth="113.0" text="Clear Land" />
+      <Button fx:id="buildImprovement" layoutX="79.0" layoutY="89.0" mnemonicParsing="false" onAction="#buildImprovement" prefHeight="24.0" prefWidth="113.0" text="Build Imp" />
+      <Button fx:id="repairImprovement" layoutX="79.0" layoutY="89.0" mnemonicParsing="false" onAction="#repairImprovement" prefHeight="24.0" prefWidth="113.0" text="Repair Imp" />
+      <Button fx:id="fortify" layoutX="79.0" layoutY="2.0" mnemonicParsing="false" onAction="#fortify" prefHeight="24.0" prefWidth="113.0" text="Fortify" />
+      <Button fx:id="garrison" layoutX="79.0" layoutY="31.0" mnemonicParsing="false" onAction="#garrison" prefHeight="24.0" prefWidth="113.0" text="Garrison" />
+      <Button fx:id="rangeAttack" layoutX="79.0" layoutY="60.0" mnemonicParsing="false" onAction="#rangeAttack" prefHeight="24.0" prefWidth="113.0" text="Range Attack" />
+      <Button fx:id="meleeAttack" layoutX="79.0" layoutY="60.0" mnemonicParsing="false" onAction="#meleeAttack" prefHeight="24.0" prefWidth="113.0" text="Melee Attack" />
+      <Button fx:id="pillage" layoutX="79.0" layoutY="89.0" mnemonicParsing="false" onAction="#pillage" prefHeight="24.0" prefWidth="113.0" text="Pillage" />
+      <MenuButton fx:id="improvements" layoutX="78.0" layoutY="118.0" mnemonicParsing="false" text="Improvement">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="lands" alignment="CENTER" layoutX="79.0" layoutY="60.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="113.0" text="Land">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Button fx:id="removeRoad" layoutX="79.0" layoutY="2.0" mnemonicParsing="false" onAction="#removeRoad" prefHeight="24.0" prefWidth="113.0" text="Remove Road" />
+      <Button fx:id="rangeSetup" layoutX="79.0" layoutY="145.0" mnemonicParsing="false" onAction="#rangeSetup" prefHeight="24.0" prefWidth="113.0" text="Range Setup" />
+   </children>
+</AnchorPane>

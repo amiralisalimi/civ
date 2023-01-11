@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ap.client.ScoreboardView">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="24.0" prefWidth="770.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#enterMain" text="Back" />
+               </children>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefWidth="600.0" spacing="8.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#enterSettings" text="Settings" />
+                  <Separator orientation="VERTICAL" prefHeight="24.0" prefWidth="0.0" />
+                  <Button mnemonicParsing="false" onAction="#logout" text="Log out" />
+                  <Button mnemonicParsing="false" onAction="#exit" text="Exit" />
+               </children>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="usernameLabel" alignment="CENTER" prefWidth="150.0" style="-fx-background-color: #d6dbdf; -fx-background-radius: 5; -fx-border-color: gray; -fx-border-radius: 5;" text="Unknown" textFill="#363535">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane maxWidth="758.0" prefHeight="446.0" prefWidth="758.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <TabPane fx:id="ScoreboardPane" prefHeight="450.0" prefWidth="759.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="NETWORK MODE">
+                     <content>
+                        <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="419.0" prefWidth="600.0">
+                           <content>
+                              <TableView fx:id="networkModeTable" prefHeight="419.0" prefWidth="599.0">
+                                 <columns>
+                                    <TableColumn prefWidth="140.0" text="AVATAR" />
+                                    <TableColumn prefWidth="182.0" text="PLAYERS" />
+                                    <TableColumn prefWidth="123.0" text="SCORE" />
+                                    <TableColumn prefWidth="69.0" text="Online" />
+                                    <TableColumn prefWidth="244.0" text="Last Visit" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </content>
+                  </Tab>
+                  <Tab text="OFFLINE MODE">
+                     <content>
+                        <ScrollPane fitToHeight="true" fitToWidth="true">
+                           <content>
+                              <TableView fx:id="offlineModeTable">
+                                 <columns>
+                                    <TableColumn prefWidth="120.0" text="AVATAR" />
+                                    <TableColumn prefWidth="300.0" text="PLAYERS" />
+                                    <TableColumn prefWidth="120.0" text="MAX SCORE" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
